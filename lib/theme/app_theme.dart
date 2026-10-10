@@ -21,14 +21,13 @@ class AppTheme {
       useMaterial3: true,
       brightness: Brightness.dark,
       scaffoldBackgroundColor: background,
+      cardColor: surface,
+      canvasColor: surface,
       colorScheme: const ColorScheme.dark(
-        background: background,
         surface: surface,
-        surfaceVariant: surfaceContainer,
         primary: balanceAccent,
         secondary: saverAccent,
         tertiary: performanceAccent,
-        onBackground: textPrimary,
         onSurface: textPrimary,
       ),
       appBarTheme: const AppBarTheme(
@@ -43,21 +42,6 @@ class AppTheme {
           letterSpacing: 0.3,
         ),
         iconTheme: IconThemeData(color: textPrimary),
-      ),
-      cardTheme: CardTheme(
-        color: surface,
-        elevation: 0,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
-          side: const BorderSide(color: border, width: 1.2),
-        ),
-      ),
-      dialogTheme: DialogTheme(
-        backgroundColor: surface,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(24),
-          side: const BorderSide(color: border, width: 1.5),
-        ),
       ),
       bottomSheetTheme: const BottomSheetThemeData(
         backgroundColor: surface,
